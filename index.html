@@ -238,7 +238,7 @@
       <div class="panel-section-label">GAMEPLAY</div>
       <div class="volume-row">
         <label for="difficulty-slider">🎯 DIFFICULTY <span class="val" id="difficulty-val">Normal</span></label>
-        <input type="range" id="difficulty-slider" min="0" max="100" value="50">
+        <input type="range" id="difficulty-slider" min="0" max="100" value="90">
       </div>
       <div class="volume-row">
         <label for="speed-slider">⚡ LEVEL SPEED <span class="val" id="speed-val">1.0x</span></label>
@@ -280,9 +280,9 @@
 
   // Tier parameters: Gap, scroll speed multiplier, plane vs eagle ratio, beat orb cadence
   const TIER_CONFIG = {
-    1: { gap: 200, speedMult: 1.0,  planeRatio: 1.0,  orbInterval: 4, label: "TIER 1", color: "#00ff88" },
-    2: { gap: 175, speedMult: 1.15, planeRatio: 0.5,  orbInterval: 4, label: "TIER 2", color: "#ffdd00" },
-    3: { gap: 140, speedMult: 1.30, planeRatio: 0.15, orbInterval: 2, label: "TIER 3", color: "#ff2a6d" }
+    1: { gap: 200, speedMult: 1.0,  planeRatio: 1.0,  orbInterval: 1, label: "TIER 1", color: "#00ff88" },
+    2: { gap: 175, speedMult: 1.15, planeRatio: 0.5,  orbInterval: 1, label: "TIER 2", color: "#ffdd00" },
+    3: { gap: 140, speedMult: 1.30, planeRatio: 0.15, orbInterval: 1, label: "TIER 3", color: "#ff2a6d" }
   };
 
   // Base physics
@@ -762,7 +762,7 @@
 
   // Difficulty / Level Speed sliders — adjustable any time, including mid-run
   let difficultySliderValue = 50; // 0 (easiest) - 100 (hardest)
-  let speedSliderValue = 50;      // 0 (slowest) - 100 (fastest)
+  let speedSliderValue = 90;      // 0 (slowest) - 100 (fastest)
   function getDifficultyFactor() { return 0.6 + (difficultySliderValue / 100) * 0.8; } // 0.6x - 1.4x obstacle density
   function getSpeedFactor() { return 0.7 + (speedSliderValue / 100) * 0.6; }           // 0.7x - 1.3x scroll speed
   function getDifficultyLabel(v) { return v < 34 ? 'Easy' : (v < 67 ? 'Normal' : 'Hard'); }
