@@ -2,7 +2,7 @@
 
 A rhythm-based Flappy Bird clone — obstacle patterns, speed, and intensity all sync to the beat of the background track. Dodge planes, ravens, and eagles, collect beat orbs for combos, and try to survive the full song.
 
-**▶ Play it here:** (https://haashiraboobacker.github.io/Bird-Beat/)
+**▶ Play it here:** (https://haashiraboobacker.github.io/Beat-Bird/)
 
 
 
